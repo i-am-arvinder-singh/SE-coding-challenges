@@ -3,10 +3,8 @@
       "target": "es5",
       "module": "CommonJS",
       "strict": true,
-    //   "esModuleInterop": true,
       "outDir": "./dist",
       "rootDir": "./src",
-    //   "moduleResolution": "Node16",
       "sourceMap": true,
     },
     "include": [
