@@ -1,0 +1,26 @@
+{
+  "name": "johncrickett-coding-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:local": "tsc",
+    "start-app": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-am-arvinder-singh/SE-coding-challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/i-am-arvinder-singh/SE-coding-challenges/issues"
+  },
+  "homepage": "https://github.com/i-am-arvinder-singh/SE-coding-challenges#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.7",
+    "typescript": "^5.3.3"
+  }
+}
