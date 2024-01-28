@@ -1,5 +1,5 @@
 import { PathLike } from "fs";
-import { executeWCByteReadCommand } from "../wc-cli-command/wcCommandProgram";
+import { executeCommand } from "../wc-cli-command/CLICommand";
 import { getNumberOfBytes } from "./ReadBytes";
 
 describe("readBytes", () => {
@@ -7,7 +7,7 @@ describe("readBytes", () => {
 
   const command = `wc -c ${TestPath}`;
   it("should read the number of bytes in a file", async () => {
-    const fromWCCommand = await executeWCByteReadCommand(command);
+    const fromWCCommand = await executeCommand(command);
     const actualValue = getNumberOfBytes(TestPath).toString();
 
     if (fromWCCommand.stderr) throw new Error(fromWCCommand.stderr.toString());
